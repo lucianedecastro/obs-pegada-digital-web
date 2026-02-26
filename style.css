@@ -1,0 +1,89 @@
+/* Paleta baseada no Protocolo de Impacto Digital */
+:root {
+    --dark-bg: #0d1117;
+    --card-bg: rgba(22, 27, 34, 0.8);
+    --neon-green: #00ff88;
+    --text-main: #e6edf3;
+    --border-glow: rgba(0, 255, 136, 0.3);
+}
+
+body {
+    background-color: var(--dark-bg);
+    background-image: radial-gradient(circle at top right, #163321, transparent); /* Efeito de luz suave */
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 550px;
+}
+
+header h1 {
+    color: var(--neon-green);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    text-shadow: 0 0 10px var(--border-glow);
+}
+
+/* Efeito 'Aquário de Impacto' (Glassmorphism) */
+.card {
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border-glow);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.8rem;
+    color: var(--neon-green);
+    text-transform: uppercase;
+}
+
+select, input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background: #0d1117;
+    border: 1px solid #30363d;
+    color: white;
+    border-radius: 8px;
+    box-sizing: border-box; /* Garante que o padding não quebre a largura */
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--neon-green);
+    color: #0d1117;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    box-shadow: 0 0 20px var(--neon-green);
+    transform: translateY(-2px);
+}
+
+/* Estilo do Widget de Confiança */
+.result-card {
+    margin-top: 20px;
+    border-left: 4px solid var(--neon-green);
+    background: rgba(0, 255, 136, 0.05);
+}
+
+.hidden { display: none; }

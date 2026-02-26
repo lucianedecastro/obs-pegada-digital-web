@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Observatório de Pegada Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>🌱 Observatório de Pegada Digital</h1>
+            <p>Auditoria de Desmaterialização e Impacto Ambiental</p>
+        </header>
+
+        <section class="card">
+            <div class="form-group">
+                <label for="material">Selecione o Material:</label>
+                <select id="material">
+                    <option value="PVC">PVC - Policloreto de Vinila</option>
+                    <option value="LDPE">LDPE - Polietileno</option>
+                    <option value="PMMA">PMMA - Acrílico</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="peso">Peso do material evitado (kg):</label>
+                <input type="number" id="peso" placeholder="Ex: 10.5">
+            </div>
+
+            <button id="btn-calcular">Calcular Impacto Evitado</button>
+        </section>
+
+        <section id="resultado" class="card result-card hidden">
+            <h3>📊 Resultado da Auditoria</h3>
+            <div id="dados-resultado"></div>
+            <button onclick="gerarRelatorio()" style="background-color: #30363d; margin-top: 15px; font-size: 0.8rem;">
+                📥 Baixar Relatório Auditável (PDF)
+            </button>
+        </section>
+
+        <footer style="margin-top: 40px; text-align: center; font-size: 0.8rem; color: #888; border-top: 1px solid #333; padding-top: 20px;">
+            <p>API Rest desenvolvida como parte do Projeto de Extensão "Resíduo Plástico" da Disciplina Meio Ambiente e Sustentabilidade - 2026</p>
+            <p><strong>Aluna:</strong> Luciane de Castro - <strong>RA:</strong> 4556933</p>
+            <p><strong>Curso:</strong> Análise e Desenvolvimento de Sistemas</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

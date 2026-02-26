@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre o Projeto | Observatório de Pegada Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/188/188333.png">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>🌿 Sobre o Projeto</h1>
+            <p>Projeto de Extensão: Infraestrutura Digital Sustentável</p>
+        </header>
+
+        <article class="card" style="text-align: justify; line-height: 1.6;">
+            <h2 style="color: var(--neon-green); border-bottom: 1px solid var(--border-glow); padding-bottom: 10px;">
+                Contexto e Propósito
+            </h2>
+            <p>
+                Este sistema surge no âmbito do projeto de extensão da <strong>UNISA</strong>: <em>"Proposição de Modelo de Monitoramento de Impacto Ambiental e Redução de Resíduos Plásticos"</em>. 
+                O foco central é o <strong>Acervo Carmen Lydia da Mulher Brasileira no Esporte</strong>, utilizando a tecnologia para substituir materiais físicos de curta duração (PVC, PMMA, LDPE) por difusão cultural em rede.
+            </p>
+
+            <h3 style="color: var(--neon-green); margin-top: 20px;">Metodologia de Auditoria</h3>
+            <p>
+                A aplicação utiliza o conceito de <strong>Adicionalidade Líquida</strong>. Diferente de calculadoras comuns, nosso algoritmo subtrai o custo energético do tráfego de dados e do processamento em nuvem (Base: <em>The Shift Project / IEA</em>) da pegada de carbono do material físico evitado.
+            </p>
+
+            <h3 style="color: var(--neon-green); margin-top: 20px;">Fundamentação Científica</h3>
+            <ul>
+                <li><strong>ICE Database (Univ. of Bath):</strong> Fatores de emissão para polímeros industriais.</li>
+                <li><strong>IPCC (Waste Sector):</strong> Cálculo de emissões de metano evitadas em aterros sanitários.</li>
+                <li><strong>ODS 9, 11 e 12:</strong> Alinhamento com as metas da Agenda 2030 da ONU para consumo e produção responsáveis.</li>
+            </ul>
+
+            <div style="background: rgba(0, 255, 136, 0.1); padding: 15px; border-radius: 8px; margin-top: 20px; border: 1px solid var(--border-glow); font-size: 0.85rem;">
+                <strong>Rastreabilidade ADS:</strong> A solução técnica utiliza <strong>Spring Boot 3</strong>, banco de dados <strong>TiDB Cloud</strong> para persistência auditável e deploy containerizado via <strong>Docker</strong>.
+            </div>
+
+            <button onclick="window.location.href='index.html'" style="margin-top: 30px;">
+                ⬅️ Voltar ao Calculador
+            </button>
+        </article>
+
+        <footer style="margin-top: 40px; text-align: center; font-size: 0.8rem; color: #888;">
+            <p>UNISA - Análise e Desenvolvimento de Sistemas - 2026</p>
+            <p>Luciane de Castro - RA: 4556933</p>
+        </footer>
+    </main>
+</body>
+</html>

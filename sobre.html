@@ -11,7 +11,7 @@
     <main class="container">
         <header>
             <h1>🌿 Sobre o Projeto</h1>
-            <p>Projeto de Extensão: Infraestrutura Digital Sustentável</p>
+            <p>Projeto de Extensão – Monitoramento de Impacto Ambiental na Produção Cultural</p>
         </header>
 
         <article class="card" style="text-align: justify; line-height: 1.6;">
@@ -19,24 +19,35 @@
                 Contexto e Propósito
             </h2>
             <p>
-                Este sistema surge no âmbito do projeto de extensão da <strong>UNISA</strong>: <em>"Proposição de Modelo de Monitoramento de Impacto Ambiental e Redução de Resíduos Plásticos"</em>. 
-                O foco central é o <strong>Acervo Carmen Lydia da Mulher Brasileira no Esporte</strong>, utilizando a tecnologia para substituir materiais físicos de curta duração (PVC, PMMA, LDPE) por difusão cultural em rede.
+                Este sistema foi desenvolvido no âmbito do projeto de extensão da <strong>UNISA</strong>, intitulado 
+                <em>"Proposição de Modelo de Monitoramento de Impacto Ambiental e Redução de Resíduos Plásticos na Produção Cultural Esportiva"</em>.
+                A iniciativa propõe a aplicação de tecnologia da informação para mensurar o impacto ambiental associado ao uso de materiais plásticos
+                em exposições culturais, convertendo dados de massa polimérica (PVC, PMMA, LDPE e vinílicos) em indicadores ambientais auditáveis.
+            </p>
+            <p>
+                O objetivo é contribuir para a construção de métricas digitais capazes de ampliar a transparência, a rastreabilidade e a governança
+                ambiental no setor cultural, promovendo alinhamento com práticas de economia circular e sustentabilidade institucional.
             </p>
 
-            <h3 style="color: var(--neon-green); margin-top: 20px;">Metodologia de Auditoria</h3>
+            <h3 style="color: var(--neon-green); margin-top: 20px;">Metodologia de Monitoramento</h3>
             <p>
-                A aplicação utiliza o conceito de <strong>Adicionalidade Líquida</strong>. Diferente de calculadoras comuns, nosso algoritmo subtrai o custo energético do tráfego de dados e do processamento em nuvem (Base: <em>The Shift Project / IEA</em>) da pegada de carbono do material físico evitado.
+                A aplicação utiliza o conceito de <strong>Adicionalidade Líquida</strong>, estruturando a comparação entre o impacto ambiental
+                associado à produção de materiais plásticos e o custo energético da infraestrutura digital utilizada para processamento dos dados.
+                A modelagem mantém caráter analítico e referenciado, sem pretensão inventarial, funcionando como ferramenta de apoio à tomada de decisão.
             </p>
 
             <h3 style="color: var(--neon-green); margin-top: 20px;">Fundamentação Científica</h3>
             <ul>
-                <li><strong>ICE Database (Univ. of Bath):</strong> Fatores de emissão para polímeros industriais.</li>
-                <li><strong>IPCC (Waste Sector):</strong> Cálculo de emissões de metano evitadas em aterros sanitários.</li>
-                <li><strong>ODS 9, 11 e 12:</strong> Alinhamento com as metas da Agenda 2030 da ONU para consumo e produção responsáveis.</li>
+                <li><strong>ICE Database (University of Bath):</strong> Fatores de emissão para polímeros industriais.</li>
+                <li><strong>IPCC – Waste Sector:</strong> Diretrizes para estimativa de emissões associadas a resíduos.</li>
+                <li><strong>IEA:</strong> Fatores médios de emissão elétrica utilizados para estimativa de custo energético digital.</li>
+                <li><strong>ODS 9, 11 e 12:</strong> Alinhamento com a Agenda 2030 da ONU para inovação, infraestrutura e consumo responsável.</li>
             </ul>
 
             <div style="background: rgba(0, 255, 136, 0.1); padding: 15px; border-radius: 8px; margin-top: 20px; border: 1px solid var(--border-glow); font-size: 0.85rem;">
-                <strong>Rastreabilidade ADS:</strong> A solução técnica utiliza <strong>Spring Boot 3</strong>, banco de dados <strong>TiDB Cloud</strong> para persistência auditável e deploy containerizado via <strong>Docker</strong>.
+                <strong>Arquitetura Técnica (ADS):</strong> A solução foi implementada com <strong>Spring Boot 3</strong> no backend, 
+                persistência de dados via <strong>TiDB Cloud</strong> e deploy containerizado utilizando <strong>Docker</strong>. 
+                A documentação da API está disponível via Swagger para fins de auditoria e validação técnica.
             </div>
 
             <button onclick="window.location.href='index.html'" style="margin-top: 30px;">
